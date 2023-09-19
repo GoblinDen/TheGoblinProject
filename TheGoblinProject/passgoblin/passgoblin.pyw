@@ -23,7 +23,7 @@ def generate_password():
     
     filename = filename_var.get()
     
-    documents_folder = os.path.expanduser('D:\Joyce\Documents')  # Get the Documents folder path
+    documents_folder = os.path.expanduser('C:\\Users\\%USERNAME%\\Documents')  # Get the Documents folder path
     
     # Create the "goblin_chest" directory if it doesn't exist in Documents folder
     goblin_chest_path = os.path.join(documents_folder, "goblin_chest")

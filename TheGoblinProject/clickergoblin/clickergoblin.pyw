@@ -11,7 +11,7 @@ def click(x,y):
     time.sleep(0.01)
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0)
     
-file_path = filedialog.askopenfilename(filetypes=[("png Files", "*.png")])
+file_path = filedialog.askopenfilename(filetypes=[("Photo Files", "*.png *.jpg *.jpeg *.bmp")])
 
 while keyboard.is_pressed('q') == False:
         try:
