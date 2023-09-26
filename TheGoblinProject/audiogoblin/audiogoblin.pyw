@@ -17,9 +17,8 @@ def main():
     # Open a file dialog to choose an audio file
     file_path = filedialog.askopenfilename(filetypes=[("Audio Files", "*.mp3 *.wav *.aac")])
 
-    while not file_path:
-        print("No file selected. Exiting...")
-        file_path = filedialog.askopenfilename(filetypes=[("Audio Files", "*.mp3 *.wav *.aac")])
+    if not file_path:
+        exit(-1)
 
     sound = pygame.mixer.Sound(file_path)
 
